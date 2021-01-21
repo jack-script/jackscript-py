@@ -33,5 +33,7 @@ newset2.clear();
 # print(isSubset(normalset1, normalset2));
 # print(isSuperset(normalset1, normalset2));
 
-print(Dom(cartesian1))
-print(Range(cartesian1))
+# print(Dom(cartesian1))
+# print(Range(cartesian1))
+
+print(isBinaryRelation({coords(2,23)}, cartesian1));

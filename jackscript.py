@@ -83,11 +83,9 @@ def Range(cartesianProduct):
 	
 
 
-#  isDomain function
-# takes a set ;and 2nd set which is a set of coordinates
-# def isDomain():
-
-
-# isRange function
-
+# isBinaryRelation
+#  named it R because its a relation from The_Product()
+#  R is also a set
+def isBinaryRelation(R, cartesianProduct):
+	return isSubset(R, cartesianProduct)
 

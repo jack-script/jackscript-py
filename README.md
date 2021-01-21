@@ -65,6 +65,20 @@ set2 = {2, 5, 6, 9}
 answer = isSuperset(set2, set1) # returns True 
 print(answer) # prints True
 ```
+<h5>Create a cartesian product</h5>
+
+```python
+#create a cartesian product by calling the createCartesian() function
+
+```
+
+
+<!-- write domain and range documentation here -->
+
+<!-- a Binary Relation is a set that is the subset of any Cartesian product 
+	if isSubset(R, createCartesian(S, S)) ... then R is a BinaryRelation of S
+-->
+
 
 
 
