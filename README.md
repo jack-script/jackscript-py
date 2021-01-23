@@ -69,23 +69,22 @@ print(answer) # prints True
 
 ```python
 #create a cartesian product by calling the createCartesian() function
-
 ```
 
-<h5>Check if a prdcuct is a relation of another</h5>
+<h5>Check if a product is a relation of another</h5>
 <p>the function is called: <b>isRelation()</b> </p>
 
 ```python 
-	""" 
-		first create a cartesian product from sets:
-	 	there are obviously multiple ways of creating cartesianProducts; we'll use more complicated route to demonstrate the use:
-	"""
-	# Create a couple of normal sets
-	normalset1 = {2, 3, 4} # another way would be: normalset1 = Set([2,3,4])
-	normalset2 = {2, 3, 4}
-	normalset3 = {2, 3}
+""" 
+	first create a cartesian product from sets:
+	there are obviously multiple ways of creating cartesianProducts; we'll use more complicated route to demonstrate the use:
+"""
+# Create a couple of normal sets
+normalset1 = {2, 3, 4} # another way would be: normalset1 = Set([2,3,4])
+normalset2 = {2, 3, 4}
+normalset3 = {2, 3}
 
-	cartesian1 = createCartesian(normalset1, normalset2);
+cartesian1 = createCartesian(normalset1, normalset2);
 	cartesian2 = createCartesian(normalset1, normalset3); 
 ```
 
@@ -94,7 +93,7 @@ print(answer) # prints True
 <p>so technically, <code>cartesianProduct2</code> should be a relation of <code>cartesian1</code>. We test this theory in the function below, in continuation of the above code.</p>
 
 ```python
-	print(isRelation(cartesian2, cartesian1)); # returns true
+print(isRelation(cartesian2, cartesian1)); # returns true
 ```
 
 
