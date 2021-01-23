@@ -54,7 +54,7 @@ def isSuperset(normalset1, normalset2):
 	return True
 
 
-#  both params teake in set of coords(or... cartesians)
+#  both params teake in set of coords(or... cartesians) THIS IS IMPORTANT
 def isRelation(normalset1, cartesianProduct):
 	try: # make sure params are of type set
 		if isinstance(normalset1, set) != True or isinstance(cartesianProduct, set) != True:			
@@ -80,19 +80,36 @@ def Range(cartesianProduct):
 	for i in cartesianProduct:
 		newSet.add(i.x);
 	return newSet;
-	
+
+
 
 
 # isBinaryRelation
 #  named it R because its a relation from The_Product()
 #  R is also a set
-def isBinaryRelation(R, cartesianProduct):
+""" Basically a binary relation is when a ser->R is a sbuset of the sqrt(A) where A is a normal set """
+def isBinaryRelation(R, normalSet):
+	cartesianProduct = createCartesian(normalSet, normalSet);
 	return isSubset(R, cartesianProduct)
 
 
 # PROPERTIES OF RELATIONS........
-def isReflexive():
-	pass
+
+# takes a set of coords and a normal set....
+""" We will then take the second param and create a cartesian product for them """
+def isReflexive(ReflexiveSet, SuperSet):
+	#  first check if the ReflexiveSet is a relation to the cartesian Product...
+	try:
+		if isRelation(ReflexiveSet, SuperSet) != True:	
+			raise Exception('Wrong Type, First param must be relation of param two')
+	except Exception as inst:
+		print(type(normalset1))
+		print(inst.args)
+	SuperSetProduct = createCartesian(SuperSet, SuperSet);
+	return "success";
+
+
+
 
 def isIrreflexive():
 	pass

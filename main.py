@@ -11,9 +11,11 @@ from jackscript import *
 # myset.add(mycoord1)
 # myset.add(mycoord2)
 normalset1 = {2, 3, 4}
-normalset2 = {5, 6}
+normalset2 = {2, 3, 4}
+normalset3 = {2, 3}
 
 cartesian1 = createCartesian(normalset1, normalset2);
+cartesian2 = createCartesian(normalset1, normalset3);
 # print(isSubset(normalset1, normalset2));
 
 # cartesian2 = createCartesian( {2}, {100} );
@@ -32,8 +34,9 @@ newset2.clear();
 
 # print(isSubset(normalset1, normalset2));
 # print(isSuperset(normalset1, normalset2));
-
 # print(Dom(cartesian1))
 # print(Range(cartesian1))
+# print(isBinaryRelation({coords(2,23)}, cartesian1));
 
-print(isBinaryRelation({coords(2,23)}, cartesian1));
+print(isRelation(cartesian2, cartesian1));
+# print(isReflexive(normalset1, cartesian1));
