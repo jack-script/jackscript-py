@@ -75,8 +75,10 @@ print(answer) # prints True
 
 <!-- write domain and range documentation here -->
 
+
+
 <!-- a Binary Relation is a set that is the subset of any Cartesian product 
-	if isSubset(R, createCartesian(S, S)) ... then R is a BinaryRelation of S
+	if isSubset(R, createCartesian(A, B)) returns true... then R is a BinaryRelation of S
 -->
 
 

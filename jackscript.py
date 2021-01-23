@@ -89,3 +89,28 @@ def Range(cartesianProduct):
 def isBinaryRelation(R, cartesianProduct):
 	return isSubset(R, cartesianProduct)
 
+
+# PROPERTIES OF RELATIONS........
+def isReflexive():
+	pass
+
+def isIrreflexive():
+	pass
+
+def isSymmetric():
+	pass
+
+def isAntiSymmetric():
+	pass
+
+def isTransitive():
+	pass
+
+def isTrichotomy():
+	pass
+
+def inverseRelation():
+	pass
+
+def relationComposition():
+	pass
