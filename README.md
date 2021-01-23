@@ -1,15 +1,7 @@
-### functions still to build:
-
-
-0. superset
-1. isRealation()
-2. domain
-3. range
-4. codomain
-5. 
-
 
 ### Documentation:
+This README does not cover the entire libraries documentation
+Read documentation from the [official docs]('https:://jackscript.macbase.co.za')
 
 ##### Installation
 install jackscript-py
