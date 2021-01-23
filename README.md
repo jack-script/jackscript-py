@@ -85,7 +85,7 @@ normalset2 = {2, 3, 4}
 normalset3 = {2, 3}
 
 cartesian1 = createCartesian(normalset1, normalset2);
-	cartesian2 = createCartesian(normalset1, normalset3); 
+cartesian2 = createCartesian(normalset1, normalset3); 
 ```
 
 <p>as u can see above; we used <code>normalset1</code> and <code>normalset3</code> to create a <code>cartesian2</code></p>
