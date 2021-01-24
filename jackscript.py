@@ -95,27 +95,60 @@ def isBinaryRelation(R, normalSet):
 
 # PROPERTIES OF RELATIONS........
 
-# takes a set of coords and a normal set....
+# first param is a set of coords, second is a NORMAL set
 """ We will then take the second param and create a cartesian product for them """
-def isReflexive(ReflexiveSet, SuperSet):
+def isReflexive(ReflexiveSetOfCoords, SuperSet):
 	#  first check if the ReflexiveSet is a relation to the cartesian Product...
-	try:
-		if isRelation(ReflexiveSet, SuperSet) != True:	
-			raise Exception('Wrong Type, First param must be relation of param two')
-	except Exception as inst:
-		print(type(normalset1))
-		print(inst.args)
 	SuperSetProduct = createCartesian(SuperSet, SuperSet);
-	return "success";
+	try:
+		if isRelation(ReflexiveSetOfCoords, SuperSetProduct) != True:	
+			raise Exception('Wrong Type, First param must be relation of param two.')
+	except Exception as inst:
+		print(inst.args)
+	
+	# loop through SuperSet, for every element create a coord that has the same x and y.
+	# then check if that coord exists in the ReflexiveSetOfCoords array or not...
+	for i in SuperSet:
+		myCoord = coords(i,i);
+		print(myCoord)
+		if myCoord not in ReflexiveSetOfCoords:
+			return False
+	return True
 
 
+def isIrreflexive(ReflexiveSetOfCoords, SuperSet):
+	#  first check if the ReflexiveSet is a relation to the cartesian Product...
+	SuperSetProduct = createCartesian(SuperSet, SuperSet);
+	try:
+		if isRelation(ReflexiveSetOfCoords, SuperSetProduct) != True:	
+			raise Exception('Wrong Type, First param must be relation of param two.')
+	except Exception as inst:
+		print(inst.args)
+	
+	# loop through SuperSet, for every element create a coord that has the same x and y.
+	# then check if that coord exists in the ReflexiveSetOfCoords array or not...
+	for i in SuperSet:
+		myCoord = coords(i,i);
+		print(myCoord)
+		if myCoord in ReflexiveSetOfCoords:
+			return False
+	return True
 
-
-def isIrreflexive():
-	pass
-
-def isSymmetric():
-	pass
+# what happens here is i loop through ReflexiveSet... and for every x,y I check if y,x exists-- if not return false
+def isSymmetric(ReflexiveSetOfCoords, SuperSet):
+	SuperSetProduct = createCartesian(SuperSet, SuperSet);
+	try:
+		if isRelation(ReflexiveSetOfCoords, SuperSetProduct) != True:	
+			raise Exception('Wrong Type, First param must be relation of param two.')
+	except Exception as inst:
+		print(inst.args)
+	
+	print(SuperSetProduct)
+	for i in ReflexiveSetOfCoords:
+		myCoord = coords(i.y, i.x) # this is basically the reverse, then i go on to compare it with the COORDS in the SuperSet
+		if myCoord not in ReflexiveSetOfCoords:
+			return False
+	return True
 
 def isAntiSymmetric():
 	pass

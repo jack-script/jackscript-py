@@ -10,9 +10,9 @@ from jackscript import *
 # myset =set()
 # myset.add(mycoord1)
 # myset.add(mycoord2)
-normalset1 = {2, 3, 4}
+normalset1 = {2, 3, 4, 8}
 normalset2 = {2, 3, 4}
-normalset3 = {2, 3}
+normalset3 = {2, 3, 4, 5}
 
 cartesian1 = createCartesian(normalset1, normalset2);
 cartesian2 = createCartesian(normalset1, normalset3);
@@ -38,5 +38,10 @@ newset2.clear();
 # print(Range(cartesian1))
 # print(isBinaryRelation({coords(2,23)}, cartesian1));
 
-print(isRelation(cartesian2, cartesian1));
-# print(isReflexive(normalset1, cartesian1));
+# print(isRelation(cartesian2, cartesian1));
+# print(isIrreflexive(cartesian2, normalset1));
+
+
+# testing symmetry....
+myset = { coords(2,3), coords(3,2), coords(8,3), coords(3,8)}
+print(isSymmetric(myset,normalset1  ))
