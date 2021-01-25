@@ -1,5 +1,6 @@
 from jackscript import *  
 
+# added comment
 # coords = namedtuple("Coords", ['x', 'y'])
 # mycoord1 = coords(100, 500)
 # mycoord2 = coords(5000, 9000)
