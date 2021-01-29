@@ -1,7 +1,7 @@
-
 ### Documentation:
 This README does not cover the entire libraries documentation
-Read documentation from the [official docs](https:://jackscript.macbase.co.za)
+Read documentation from the <https://jackscript.macbase.co.za>
+The github of the documentation website is <https://github.com/danielromeo/jackscriptDocs>
 
 ##### Installation
 install jackscript-py
