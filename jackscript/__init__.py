@@ -110,7 +110,6 @@ def isReflexive(ReflexiveSetOfCoords, SuperSet):
 	# then check if that coord exists in the ReflexiveSetOfCoords array or not...
 	for i in SuperSet:
 		myCoord = coords(i,i);
-		print(myCoord)
 		if myCoord not in ReflexiveSetOfCoords:
 			return False
 	return True
@@ -129,7 +128,6 @@ def isIrreflexive(ReflexiveSetOfCoords, SuperSet):
 	# then check if that coord exists in the ReflexiveSetOfCoords array or not...
 	for i in SuperSet:
 		myCoord = coords(i,i);
-		print(myCoord)
 		if myCoord in ReflexiveSetOfCoords:
 			return False
 	return True
@@ -143,7 +141,6 @@ def isSymmetric(ReflexiveSetOfCoords, SuperSet):
 	except Exception as inst:
 		print(inst.args)
 	
-	print(SuperSetProduct)
 	for i in ReflexiveSetOfCoords:
 		myCoord = coords(i.y, i.x) # this is basically the reverse, then i go on to compare it with the COORDS in the SuperSet
 		if myCoord not in ReflexiveSetOfCoords:

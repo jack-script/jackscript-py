@@ -1,3 +1,6 @@
+### About JackscriptPy
+Jackscriptpy is a python math library of sets. It covers a few useful functions involving sets that are otherwise not available in the standard python library.
+
 ### Documentation:
 This README does not cover the entire libraries documentation
 Read documentation from the <https://jackscript.macbase.co.za>
