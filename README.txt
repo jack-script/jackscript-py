@@ -1,0 +1,1 @@
+Jackscriptpy is a python math library of sets. It covers a few useful functions involving sets that are otherwise not available in the standard python library.

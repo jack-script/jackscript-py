@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+jackscript/__init__.py
+jackscript.egg-info/PKG-INFO
+jackscript.egg-info/SOURCES.txt
+jackscript.egg-info/dependency_links.txt
+jackscript.egg-info/top_level.txt
