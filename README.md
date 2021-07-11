@@ -11,7 +11,7 @@ install jackscript-py
 `pip3 install jackscriptpy`
 
 ```python
-import * from jackscriptpy
+from jackscript import *
 ```
 
 ##### How to create a set:
