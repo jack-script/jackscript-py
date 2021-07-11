@@ -10,8 +10,8 @@ classifiers = [
  
 setup(
   name='jackscript',
-  version='0.0.2',
-  description='A math lib of sets',
+  version='0.1.0',
+  description='A math lib of sets.',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='https://jackscript.macbase.co.za',  
   author='Daniel Romeo Mamphekgo',

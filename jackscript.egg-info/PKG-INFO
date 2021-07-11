@@ -1,7 +1,7 @@
 Metadata-Version: 1.1
 Name: jackscript
-Version: 0.0.2
-Summary: A math lib of sets
+Version: 0.1.0
+Summary: A math lib of sets.
 Home-page: https://jackscript.macbase.co.za
 Author: Daniel Romeo Mamphekgo
 Author-email: danielromeo99@gmail.com
@@ -11,9 +11,9 @@ Description: Jackscriptpy is a python math library of sets. It covers a few usef
         Change Log
         ==========
         
-        0.0.2 (8/06/2021)
+        0.1.0 (11/07/2021)
         -------------------
-        - Second Release
+        - The first official minor release of the library. It is stable enough to use for non production projects.
 Keywords: Sets
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
