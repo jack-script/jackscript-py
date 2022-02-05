@@ -30,7 +30,7 @@ mycoordinate = coord(1, 2) # this sets x to 1 and y to 2
 
 ```
 
-##### advanced...
+##### Advanced...
 ```python
 # add a coordinate to a set, using the coordinate created above:
 myset.add(mycoordinate);
@@ -40,7 +40,7 @@ myset.clear()
 print(myset)  # returns set()
 ```
 
-##### checking whether a set is a subset of another...
+##### Checking whether a set is a subset of another...
 ```python
 set1 = {2, 5, 6}
 set2 = {2, 5, 6, 9}
@@ -67,7 +67,7 @@ print(answer) # prints True
 ```
 
 <h5>Check if a product is a relation of another</h5>
-<p>the function is called: <b>isRelation()</b> </p>
+<p>The function is called: <b>isRelation()</b> </p>
 
 ```python 
 """ 
@@ -83,9 +83,9 @@ cartesian1 = createCartesian(normalset1, normalset2);
 cartesian2 = createCartesian(normalset1, normalset3); 
 ```
 
-<p>as u can see above; we used <code>normalset1</code> and <code>normalset3</code> to create a <code>cartesian2</code></p>
+<p>As you can see above; we used <code>normalset1</code> and <code>normalset3</code> to create a <code>cartesian2</code></p>
 
-<p>so technically, <code>cartesianProduct2</code> should be a relation of <code>cartesian1</code>. We test this theory in the function below, in continuation of the above code.</p>
+<p>So technically, <code>cartesianProduct2</code> should be a relation of <code>cartesian1</code>. We test this theory in the function below, in continuation of the above code.</p>
 
 ```python
 print(isRelation(cartesian2, cartesian1)); # returns true
@@ -93,11 +93,11 @@ print(isRelation(cartesian2, cartesian1)); # returns true
 
 
 
-<!-- write domain and range documentation here -->
+<!-- Write domain and range documentation here -->
 
 
 
-<!-- a Binary Relation is a set that is the subset of any Cartesian product 
+<!-- A Binary Relation is a set that is the subset of any Cartesian product 
 	if isSubset(R, createCartesian(A, B)) returns true... then R is a BinaryRelation of S
 -->
 
